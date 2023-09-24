@@ -1,6 +1,5 @@
 """
-CP1404/CP5632 - Practical
-Broken program to determine score status
+Program to get a score and generate a random score, and print their category.
 """
 
 import random
