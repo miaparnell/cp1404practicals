@@ -1,0 +1,4 @@
+name, age
+Mia, 18
+Lynn, 50
+Scott, 60
