@@ -1,4 +1,3 @@
-
 NAME_TO_CODE = {"Brilliant Rose": "ff55a3", "Baby Blue": "89cff0", "Bright Lilac": "d891ef", "Corn": "fbec5d",
                 "Cosmic Latte": "fff8e7", "Cotton Candy": "ffbcd9", "DarkSeaGreen1": "c1ffc1", "Deep Peach": "ffcba4",
                 "Ghost White": "f8f8ff", "Golden Yellow": "ffdf00"}
