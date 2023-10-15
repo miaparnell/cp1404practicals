@@ -18,3 +18,4 @@ while email != "":
 
 for email, name in email_to_name.items():
     print(f"{name} ({email})")
+
