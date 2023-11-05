@@ -14,10 +14,26 @@ def main():
 
     for guitar in guitars:
         print(guitar)
-    guitars.sort()
 
+    guitars.sort()
+    print("Guitars sorted by year: ")
     for guitar in guitars:
         print(guitar)
+
+    name = input("Name: ")
+    while name != "":
+        year = int(input("Year: "))
+        cost = float(input("Cost : $"))
+        new_guitar = Guitar(name, year, cost)
+        guitars.append(new_guitar)
+        print(f"{new_guitar} added.")
+        name = input("Name: ")
+
+    with open('guitars.csv', 'w', newline="") as out_file:
+        for guitar in guitars:
+            guitar_string = f"{guitar.name},{str(guitar.year)},{str(guitar.cost)}\n"
+            out_file.write(guitar_string)
+        out_file.close()
 
 
 main()
