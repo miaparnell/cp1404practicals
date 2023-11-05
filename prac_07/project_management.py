@@ -51,6 +51,7 @@ def load_data(in_filename):
 
 
 def display_projects(projects):
+    """Display the projects separated by their completion status."""
     for i, project in enumerate(projects, 1):
         print("Completed projects: ")
         if project.is_complete():
@@ -61,11 +62,13 @@ def display_projects(projects):
 
 
 def filter_projects(projects):
+    """Filter the projects by date."""
     date_string = input("Date (d/m/yyyy): ")
     date = datetime.datetime.strptime(date_string, "%d/%m/%Y").date()
 
 
 def add_project(projects):
+    """Add a new project to the list."""
     print("Let's add a new project!")
     name = input("Name: ")
     start_date = input("Start date (d/m/yyyy):")
@@ -77,6 +80,7 @@ def add_project(projects):
 
 
 def update_project(projects):
+    """Update the percentage or priority level of a project."""
     project_number = 0
     for project in projects:
         print(project_number, project)
@@ -90,6 +94,7 @@ def update_project(projects):
 
 
 def save_projects(out_filename, projects):
+    """Save the projects to a file."""
     with open(out_filename, 'w', newline="") as out_file:
         for project in projects:
             out_file.write('    '.join(project) + '\n')
