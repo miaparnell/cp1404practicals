@@ -14,12 +14,10 @@ def main():
 
     for guitar in guitars:
         print(guitar)
-
     guitars.sort()
+
     for guitar in guitars:
         print(guitar)
-
-
 
 
 main()
